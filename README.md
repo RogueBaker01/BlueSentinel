@@ -69,5 +69,7 @@ Our project, Blue Sentinel, leverages Artificial Intelligence in two distinct an
 
 We believe in transparently acknowledging the role of AI in our workflow. We used **Gemini** and **ChatGPT** to assist in the development of this project.
 
-#Datasets: 
+# Datasets: 
 https://drive.google.com/drive/folders/1UCJoLE58jK5aSTLOnBFv3-mU-YNOBsuV?usp=drive_link
+# FIGMA: 
+https://www.figma.com/design/zvx7sj2ayWwoHyfvqjbmGb/BlueSentinel?node-id=0-1&p=f&t=LKrjPgpk69bkLdVf-0
