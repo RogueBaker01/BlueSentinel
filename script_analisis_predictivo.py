@@ -350,4 +350,5 @@ print(f"Datos de entrenamiento: {X_train.shape[0]} imágenes")
 print(f"Datos de validación: {X_val.shape[0]} imágenes")
 print("Archivos generados:")
 print("- shark_predictor_model.h5 (modelo entrenado)")
+
 print("- mapa_predicciones.html (mapa interactivo)")
