@@ -55,7 +55,7 @@ The benefits and impact of BlueSentinel are multi-layered:
 
 ### Software (Mobile App)
 
-* **Framework**: Flutter (iOS/Android) development.
+* **Framework**: React Native (iOS/Android) development.
 * **Mapping**: Mapbox API for its powerful data visualization and customization capabilities.
 
 ---
