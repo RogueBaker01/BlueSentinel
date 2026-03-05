@@ -4,11 +4,16 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTheme {
   // Colores Oceánicos
   static const Color deepOceanBlue = Color(0xFF001E3C);
+  static const Color darkBlue  = Color(0xFF0A1929);
   static const Color oceanBlue = Color(0xFF023E8A);
   static const Color surfaceBlue = Color(0xFFE0F7FA);
   static const Color accentTurquoise = Color(0xFF00B4D8);
   static const Color alertRed = Color(0xFFFF5252);
-  static const Color conservationGreen = Color(0xFF69F0AE);
+  static const Color green = Color(0xFF69F0AE);
+  static const Color cardBg = Color(0xFF0D2137);
+  static const Color textMuted = Color(0xFF7B9BB5);
+  static const Color borderColor = Color(0xFF1A3550);
+
 
   static ThemeData get lightTheme {
     return ThemeData(
@@ -70,7 +75,7 @@ class AppTheme {
         seedColor: oceanBlue,
         brightness: Brightness.dark,
         primary: accentTurquoise,
-        secondary: conservationGreen,
+        secondary: green,
         surface: const Color(0xFF0A1929),
         error: alertRed,
       ),

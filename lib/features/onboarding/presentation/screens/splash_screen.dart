@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../core/theme/app_theme.dart';
 
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -28,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     _currentQuote = _quotes[Random().nextInt(_quotes.length)];
 
-    Future.delayed(const Duration(seconds: 20), () {
+    Future.delayed(const Duration(seconds: 10), () {
       if (mounted) {
         context.go('/onboarding');
       }

@@ -43,7 +43,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         curve: Curves.easeInOut,
       );
     } else {
-      context.go('/home');
+      context.go('/form');
     }
   }
 
@@ -101,7 +101,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                     ? Icons.radar
                                     : Icons.analytics,
                                 size: 80,
-                                color: AppTheme.conservationGreen,
+                                color: AppTheme.green,
                               ),
                             ).animate().scale(
                               duration: 500.ms,

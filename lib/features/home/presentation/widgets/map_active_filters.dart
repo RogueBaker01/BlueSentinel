@@ -10,7 +10,6 @@ class MapActiveFilters extends StatefulWidget {
 
 class _MapActiveFiltersState extends State<MapActiveFilters> {
   // Estado local para los filtros seleccionados
-  // En el futuro, esto se movería a un Riverpod provider
   final Set<String> _selectedFilters = {'Species'};
 
   final List<String> _filters = ['Species', 'Environment', 'Activity'];
@@ -57,7 +56,7 @@ class _MapActiveFiltersState extends State<MapActiveFilters> {
             ),
             elevation: 2,
             shadowColor: Colors.black.withValues(alpha: 0.3),
-            showCheckmark: false, // Estilo más limpio tipo "botón"
+            showCheckmark: false,
           );
         },
       ),

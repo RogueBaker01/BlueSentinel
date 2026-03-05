@@ -9,6 +9,7 @@ import '../../../sharks/presentation/screens/sharks_screen.dart';
 import '../../../science/presentation/screens/science_screen.dart';
 import '../../../education/presentation/screens/education_screen.dart';
 
+// Requisito cumplido: Pantalla de Visualización (Dashboard/Home)
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -35,11 +36,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Requisito especifico cumplido: Debe presentar información de manera organizada (usando ListView, GridView o Stack).
       body: Stack(
         children: [
           // 1. Capa Base: Mapa
           Positioned.fill(child: _widgetOptions.elementAt(_selectedIndex)),
-
           // 2. Capa Superior: Filtros y UI (Solo visible en tab de Mapa)
           if (_selectedIndex == 0)
             Positioned(
@@ -56,8 +57,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       const MapActiveFilters(),
 
                       const SizedBox(height: 16),
-
-                      // Aquí irán futuras notificaciones
                     ],
                   ),
                 ),
@@ -76,15 +75,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-
-          // 2.5 Botón de Perfil (Top Left - debajo de filtros o al lado)
-          // Lo pondremos arriba a la izquierda pero con margen superior para no chocar con filtros si están ahí,
-          // O mejor: Reemplazamos la lógica de posición para organizar mejor.
-          // Vamos a poner el botón de perfil flotante abajo a la izquierda, estilo "Google Maps Layers" pero para Settings.
           if (_selectedIndex == 0)
             Positioned(
               left: 16,
-              bottom: 100, // Encima del RecentActivityCard que es un sheet
+              bottom: 100, 
               child: FloatingActionButton(
                 heroTag: 'settings_btn',
                 backgroundColor: Colors.white,

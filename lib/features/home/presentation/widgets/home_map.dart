@@ -27,10 +27,7 @@ class HomeMap extends StatelessWidget {
         TileLayer(
           urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
           userAgentPackageName: 'com.bluesentinel.app',
-          // Opcional: Usar un estilo más "oceánico" si tuviéramos un proveedor personalizado,
-          // por ahora OSM estándar.
         ),
-        // Aquí irán las capas de marcadores (tiburones) y heatmaps
         RichAttributionWidget(
           attributions: [
             TextSourceAttribution('OpenStreetMap contributors', onTap: () {}),

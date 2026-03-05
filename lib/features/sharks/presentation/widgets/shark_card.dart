@@ -75,7 +75,7 @@ class SharkCard extends StatelessWidget {
                         ),
                         decoration: BoxDecoration(
                           color: shark.status == 'Active'
-                              ? AppTheme.conservationGreen.withValues(
+                              ? AppTheme.green.withValues(
                                   alpha: 0.1,
                                 )
                               : Colors.grey.withValues(alpha: 0.1),
@@ -85,7 +85,7 @@ class SharkCard extends StatelessWidget {
                           shark.status,
                           style: TextStyle(
                             color: shark.status == 'Active'
-                                ? AppTheme.conservationGreen
+                                ? AppTheme.green
                                 : Colors.grey,
                             fontWeight: FontWeight.bold,
                             fontSize: 12,

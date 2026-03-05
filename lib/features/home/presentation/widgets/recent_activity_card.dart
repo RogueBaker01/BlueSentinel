@@ -30,17 +30,18 @@ class RecentActivityCard extends StatelessWidget {
         'time': '1d ago',
         'image':
             'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80',
-        'color': AppTheme.conservationGreen,
+        'color': AppTheme.green,
       },
     ];
 
     return DraggableScrollableSheet(
-      initialChildSize: 0.25,
+      
+      initialChildSize: 0.4,
       minChildSize: 0.15,
       maxChildSize: 0.6,
       builder: (context, scrollController) {
         return Container(
-          decoration: BoxDecoration(
+          decoration: BoxDecoration(            
             color: Colors.white,
             borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
             boxShadow: [
@@ -117,7 +118,6 @@ class RecentActivityCard extends StatelessWidget {
                         ),
                       ),
                       onTap: () {
-                        // Navegar al detalle (Fase 3)
                       },
                     );
                   },
